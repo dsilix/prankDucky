@@ -5,6 +5,7 @@ import ctypes
 import threading
 from time import sleep
 import colorama
+import winsound
 
 # Installazione automatica di colorama
 os.system("pip install colorama")
@@ -49,7 +50,9 @@ def print_colored_message():
     while True:
         color = random.choice([colorama.Fore.RED, colorama.Fore.GREEN, colorama.Fore.YELLOW])
         print(color + "SHTUPIDU SHTUPIDU SHTUPIDU!")
-        sleep(0.05)
+        # Riproduce un bip predefinito
+        winsound.Beep(3000, 200)  # Frequenza: 1000 Hz, Durata: 500 ms
+        sleep(0.06)
 
 if __name__ == "__main__":
     # Crea i thread per eseguire entrambi i loop contemporaneamente
