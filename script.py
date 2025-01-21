@@ -51,8 +51,8 @@ def print_colored_message():
         color = random.choice([colorama.Fore.RED, colorama.Fore.GREEN, colorama.Fore.YELLOW])
         print(color + "SHTUPIDU SHTUPIDU SHTUPIDU!")
         # Riproduce un bip predefinito
-        winsound.Beep(3000, 200)  # Frequenza: 1000 Hz, Durata: 500 ms
-        sleep(0.06)
+        winsound.Beep(3000, 340)  # Frequenza: 3000 Hz, Durata: 200 ms
+        sleep(0.35)
 
 if __name__ == "__main__":
     # Crea i thread per eseguire entrambi i loop contemporaneamente
